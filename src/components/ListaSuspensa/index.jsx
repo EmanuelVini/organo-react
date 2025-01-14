@@ -9,6 +9,7 @@ function ListaSuspensa(props) {
         onChange={(evento) => props.aoAlterado(evento.target.value)}
         required={props.required}
       >
+        <option value=""></option>
         {props.itens.map((item) => {
           return <option key={item}>{item}</option>;
         })}
